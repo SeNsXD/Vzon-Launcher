@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 700" width="1240" height="700">
+  <defs>
+    <!-- Background -->
+    <linearGradient id="heroShowcaseBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C16" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#070A12" />
+    </linearGradient>
+
+    <!-- Weather Gradient -->
+    <linearGradient id="cardWeather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2E56" />
+      <stop offset="60%" stop-color="#12203D" />
+      <stop offset="100%" stop-color="#0B1322" />
+    </linearGradient>
+
+    <!-- Earbuds Gradient -->
+    <linearGradient id="cardEarbuds" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162738" />
+      <stop offset="60%" stop-color="#131F2D" />
+      <stop offset="100%" stop-color="#0C1520" />
+    </linearGradient>
+
+    <!-- Media Player Gradient -->
+    <linearGradient id="cardMedia" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B1754" />
+      <stop offset="60%" stop-color="#230E33" />
+      <stop offset="100%" stop-color="#12061C" />
+    </linearGradient>
+
+    <!-- Cricket / Matches Gradient -->
+    <linearGradient id="cardCricket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E6B45" />
+      <stop offset="60%" stop-color="#0A4A35" />
+      <stop offset="100%" stop-color="#072F27" />
+    </linearGradient>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.5" />
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#3B82F6" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .card-title { font-size: 11px; font-weight: 800; letter-spacing: 1.5px; }
+    .card-val { font-size: 38px; font-weight: 900; letter-spacing: -1px; fill: #FFFFFF; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1240" height="700" fill="url(#heroShowcaseBg)" rx="24" />
+  <rect x="1" y="1" width="1238" height="698" rx="23" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(620, 52)" text-anchor="middle" class="font-sans">
+    <text y="0" font-size="28" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5px">THE DYNAMIC HERO CAROUSEL</text>
+    <text y="26" font-size="13" font-weight="500" fill="#94A3B8">Context-aware cards that seamlessly morph into view. Never cluttering. Always intelligent.</text>
+  </g>
+
+  <!-- ================= CARD 1: LIVE WEATHER ENGINE (TOP LEFT) ================= -->
+  <g transform="translate(70, 110)" filter="url(#cardShadow)" class="font-sans">
+    <rect x="0" y="0" width="530" height="240" rx="32" fill="url(#cardWeather)" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1.5" />
+    
+    <g transform="translate(32, 34)">
+      <!-- Card Label -->
+      <text x="0" y="0" fill="#93C5FD" class="card-title">LIVE WEATHER • TAP TO REFRESH</text>
+      
+      <!-- Main Temp -->
+      <text x="0" y="52" class="card-val">26°</text>
+      <text x="92" y="32" fill="#E2E8F0" font-size="18" font-weight="700">Partly cloudy</text>
+      <text x="92" y="52" fill="#94A3B8" font-size="12" font-weight="500">Feels like 27° • H 29° • L 21°</text>
+
+      <!-- Details Grid -->
+      <g transform="translate(0, 92)">
+        <g>
+          <text x="0" y="0" fill="#64748B" font-size="10" font-weight="700">PRECIPITATION</text>
+          <text x="0" y="18" fill="#FFFFFF" font-size="13" font-weight="700">12%</text>
+        </g>
+        <g transform="translate(110, 0)">
+          <text x="0" y="0" fill="#64748B" font-size="10" font-weight="700">WIND</text>
+          <text x="0" y="18" fill="#FFFFFF" font-size="13" font-weight="700">14 km/h SW</text>
+        </g>
+        <g transform="translate(220, 0)">
+          <text x="0" y="0" fill="#64748B" font-size="10" font-weight="700">AIR QUALITY</text>
+          <text x="0" y="18" fill="#10B981" font-size="13" font-weight="700">Good (38 AQI)</text>
+        </g>
+        <g transform="translate(340, 0)">
+          <text x="0" y="0" fill="#64748B" font-size="10" font-weight="700">ENGINE</text>
+          <text x="0" y="18" fill="#60A5FA" font-size="13" font-weight="700">Open-Meteo Cache</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Weather Art Graphic -->
+    <g transform="translate(420, 30)">
+      <circle cx="36" cy="24" r="22" fill="#FBBF24" />
+      <ellipse cx="26" cy="50" rx="32" ry="18" fill="#F8FAFC" fill-opacity="0.95" />
+      <circle cx="44" cy="40" r="18" fill="#E2E8F0" fill-opacity="0.95" />
+    </g>
+  </g>
+
+  <!-- ================= CARD 2: CONNECTED EARBUDS & BT (TOP RIGHT) ================= -->
+  <g transform="translate(640, 110)" filter="url(#cardShadow)" class="font-sans">
+    <rect x="0" y="0" width="530" height="240" rx="32" fill="url(#cardEarbuds)" stroke="rgba(20, 184, 166, 0.35)" stroke-width="1.5" />
+    
+    <g transform="translate(32, 34)">
+      <!-- Label -->
+      <text x="0" y="0" fill="#5EEAD4" class="card-title">BLUETOOTH AUDIO • REAL-TIME TELEMETRY</text>
+
+      <!-- Title & ANC Status -->
+      <text x="0" y="44" font-size="28" font-weight="900" fill="#FFFFFF">Earbuds Pro</text>
+      
+      <!-- ANC Pill -->
+      <g transform="translate(190, 24)">
+        <rect x="0" y="0" width="112" height="24" rx="12" fill="rgba(20, 184, 166, 0.2)" stroke="rgba(20, 184, 166, 0.4)" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#14B8A6" />
+        <text x="22" y="16" fill="#5EEAD4" font-size="10" font-weight="700">ANC ACTIVE</text>
+      </g>
+
+      <!-- Battery Tri-Gauge (L, R, Case) -->
+      <g transform="translate(0, 80)">
+        
+        <!-- Left Bud -->
+        <g transform="translate(0, 0)">
+          <circle cx="28" cy="28" r="24" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="5" />
+          <circle cx="28" cy="28" r="24" fill="none" stroke="#14B8A6" stroke-width="5" stroke-dasharray="128" stroke-dashoffset="20" stroke-linecap="round" transform="rotate(-90 28 28)" />
+          <text x="28" y="32" fill="#FFFFFF" font-size="12" font-weight="800" text-anchor="middle">85%</text>
+          <text x="28" y="68" fill="#94A3B8" font-size="10" font-weight="600" text-anchor="middle">Left Ear</text>
+        </g>
+
+        <!-- Right Bud -->
+        <g transform="translate(120, 0)">
+          <circle cx="28" cy="28" r="24" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="5" />
+          <circle cx="28" cy="28" r="24" fill="none" stroke="#14B8A6" stroke-width="5" stroke-dasharray="128" stroke-dashoffset="26" stroke-linecap="round" transform="rotate(-90 28 28)" />
+          <text x="28" y="32" fill="#FFFFFF" font-size="12" font-weight="800" text-anchor="middle">80%</text>
+          <text x="28" y="68" fill="#94A3B8" font-size="10" font-weight="600" text-anchor="middle">Right Ear</text>
+        </g>
+
+        <!-- Charging Case -->
+        <g transform="translate(240, 0)">
+          <circle cx="28" cy="28" r="24" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="5" />
+          <circle cx="28" cy="28" r="24" fill="none" stroke="#10B981" stroke-width="5" stroke-dasharray="128" stroke-dashoffset="7" stroke-linecap="round" transform="rotate(-90 28 28)" />
+          <text x="28" y="32" fill="#FFFFFF" font-size="12" font-weight="800" text-anchor="middle">95%</text>
+          <text x="28" y="68" fill="#94A3B8" font-size="10" font-weight="600" text-anchor="middle">Case</text>
+        </g>
+
+        <!-- Low Latency Badge -->
+        <g transform="translate(350, 16)">
+          <rect x="0" y="0" width="105" height="40" rx="14" fill="#0C1520" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+          <text x="12" y="16" fill="#64748B" font-size="8" font-weight="700">CODEC</text>
+          <text x="12" y="31" fill="#FFFFFF" font-size="11" font-weight="700">LDAC • 990 kbps</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= CARD 3: NOW PLAYING MEDIA (BOTTOM LEFT) ================= -->
+  <g transform="translate(70, 380)" filter="url(#cardShadow)" class="font-sans">
+    <rect x="0" y="0" width="530" height="250" rx="32" fill="url(#cardMedia)" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1.5" />
+    
+    <g transform="translate(32, 30)">
+      <!-- Label -->
+      <text x="0" y="0" fill="#D8B4FE" class="card-title">NOW PLAYING • LIVE PALETTE EXTRACTION</text>
+
+      <!-- Album Cover + Track Info -->
+      <g transform="translate(0, 20)">
+        <!-- Album Art Thumbnail -->
+        <rect x="0" y="0" width="70" height="70" rx="16" fill="#7C3AED" />
+        <circle cx="35" cy="35" r="16" fill="#4C1D95" />
+        <circle cx="35" cy="35" r="5" fill="#DDD6FE" />
+
+        <g transform="translate(86, 16)">
+          <text x="0" y="12" fill="#FFFFFF" font-size="18" font-weight="800">Midnight City</text>
+          <text x="0" y="32" fill="#C084FC" font-size="13" font-weight="600">M83 — Hurry Up, We're Dreaming</text>
+        </g>
+
+        <!-- Waveform Anim Bars -->
+        <g transform="translate(420, 18)">
+          <rect x="0" y="10" width="4" height="26" rx="2" fill="#C084FC" />
+          <rect x="8" y="2" width="4" height="34" rx="2" fill="#A855F7" />
+          <rect x="16" y="14" width="4" height="22" rx="2" fill="#DDD6FE" />
+          <rect x="24" y="6" width="4" height="30" rx="2" fill="#C084FC" />
+        </g>
+      </g>
+
+      <!-- Seekable Scrubber Progress Bar -->
+      <g transform="translate(0, 114)">
+        <rect x="0" y="0" width="466" height="5" rx="2.5" fill="rgba(255, 255, 255, 0.15)" />
+        <rect x="0" y="0" width="310" height="5" rx="2.5" fill="#C084FC" />
+        <circle cx="310" cy="2.5" r="6" fill="#FFFFFF" />
+
+        <text x="0" y="22" fill="#94A3B8" font-size="10" font-weight="600">2:48</text>
+        <text x="466" y="22" fill="#94A3B8" font-size="10" font-weight="600" text-anchor="end">4:03</text>
+      </g>
+
+      <!-- Controls Row -->
+      <g transform="translate(180, 142)">
+        <!-- Previous -->
+        <path d="M10 6 L2 14 L10 22 M2 6 L2 22" fill="none" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round" />
+        
+        <!-- Play / Pause Circle -->
+        <g transform="translate(44, -6)">
+          <circle cx="20" cy="20" r="20" fill="#FFFFFF" />
+          <rect x="14" y="12" width="4" height="16" rx="2" fill="#0F172A" />
+          <rect x="22" y="12" width="4" height="16" rx="2" fill="#0F172A" />
+        </g>
+
+        <!-- Next -->
+        <g transform="translate(100, 0)">
+          <path d="M2 6 L10 14 L2 22 M10 6 L10 22" fill="none" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= CARD 4: UPCOMING SPORTS MATCHES (BOTTOM RIGHT) ================= -->
+  <g transform="translate(640, 380)" filter="url(#cardShadow)" class="font-sans">
+    <rect x="0" y="0" width="530" height="250" rx="32" fill="url(#cardCricket)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1.5" />
+    
+    <g transform="translate(32, 30)">
+      <!-- Label & Competition Filter Tabs -->
+      <g>
+        <text x="0" y="0" fill="#6EE7B7" class="card-title">LIVE & UPCOMING FIXTURES</text>
+        <g transform="translate(240, -14)">
+          <rect x="0" y="0" width="70" height="22" rx="11" fill="rgba(255, 255, 255, 0.2)" />
+          <text x="35" y="15" fill="#FFFFFF" font-size="9.5" font-weight="700" text-anchor="middle">Cricket</text>
+          
+          <rect x="76" y="0" width="54" height="22" rx="11" fill="rgba(0, 0, 0, 0.25)" />
+          <text x="103" y="15" fill="#94A3B8" font-size="9.5" font-weight="600" text-anchor="middle">IPL</text>
+
+          <rect x="136" y="0" width="60" height="22" rx="11" fill="rgba(0, 0, 0, 0.25)" />
+          <text x="166" y="15" fill="#94A3B8" font-size="9.5" font-weight="600" text-anchor="middle">VCT</text>
+        </g>
+      </g>
+
+      <!-- Match Headline Banner -->
+      <g transform="translate(0, 22)">
+        <rect x="0" y="0" width="466" height="142" rx="20" fill="rgba(7, 47, 39, 0.6)" stroke="rgba(110, 231, 183, 0.2)" stroke-width="1" />
+
+        <!-- Stadium Floodlight Glow -->
+        <ellipse cx="233" cy="20" rx="140" ry="25" fill="#34D399" fill-opacity="0.15" />
+
+        <!-- Teams Header -->
+        <g transform="translate(24, 30)">
+          <!-- Team 1 -->
+          <text x="0" y="18" fill="#FFFFFF" font-size="22" font-weight="900">INDIA</text>
+          <text x="0" y="34" fill="#6EE7B7" font-size="11" font-weight="600">IND • Touring</text>
+          
+          <!-- VS Badge -->
+          <text x="195" y="24" fill="#34D399" font-size="16" font-weight="900" text-anchor="middle">VS</text>
+
+          <!-- Team 2 -->
+          <g transform="translate(390, 0)" text-anchor="end">
+            <text x="0" y="18" fill="#FFFFFF" font-size="22" font-weight="900">AUSTRALIA</text>
+            <text x="0" y="34" fill="#6EE7B7" font-size="11" font-weight="600">AUS • Host</text>
+          </g>
+        </g>
+
+        <!-- Divider -->
+        <line x1="24" y1="84" x2="442" y2="84" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+        <!-- Schedule & Countdown -->
+        <g transform="translate(24, 114)">
+          <circle cx="4" cy="0" r="3" fill="#F59E0B" />
+          <text x="14" y="4" fill="#FDE68A" font-size="11" font-weight="700">STARTING SOON • In 2h 15m</text>
+          <text x="390" y="4" fill="#E2E8F0" font-size="11" font-weight="600" text-anchor="end">2nd Test • Adelaide Oval</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+</svg>

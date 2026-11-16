@@ -1,0 +1,41 @@
+name: "💡 Feature Request"
+description: Propose a new feature, widget idea, or UX enhancement for Vzon Launcher
+title: "[Feature]: "
+labels: ["enhancement", "idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to make Vzon Launcher even better? Share your vision with us!
+  - type: input
+    id: title
+    attributes:
+      label: Feature Title
+      placeholder: e.g. Dynamic Hero Card for Spotify Podcasts
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem or friction in your daily workflow?
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / Visual Concept
+      description: Describe your proposed solution in detail. How should it look and behave?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative ideas or workarounds you've thought about?
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context / Mockups
+      description: Attach sketches, screenshots, or inspiration from other design systems.

@@ -1,0 +1,78 @@
+name: "🐛 Bug Report"
+description: File a bug report to help us improve Vzon Launcher
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please provide as much detail as possible to help us diagnose and resolve the bug swiftly.
+  - type: input
+    id: device
+    attributes:
+      label: Device Model & Manufacturer
+      description: e.g. Nothing Phone (2), Google Pixel 8, Samsung Galaxy S24 Ultra
+      placeholder: e.g. Nothing Phone (2)
+    validations:
+      required: true
+  - type: dropdown
+    id: android_version
+    attributes:
+      label: Android Version
+      options:
+        - "Android 16 (Baklava)"
+        - "Android 15 (Vanilla Ice Cream)"
+        - "Android 14 (Upside Down Cake)"
+        - "Android 13 (Tiramisu)"
+        - "Android 12 / 12L (Snow Cone)"
+        - "Android 11 (Red Velvet Cake)"
+        - "Android 10 (Queen Cake)"
+        - "Android 9 (Pie)"
+        - "Android 8.0 / 8.1 (Oreo)"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Vzon Launcher Build / Version
+      description: Found in Launcher Settings → About Vzon
+      placeholder: e.g. v1.0.0-beta.4 (build 142)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this behavior?
+      placeholder: |
+        1. Open Home screen
+        2. Swipe left to Feed
+        3. Long press on widget...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened? (e.g. animation stutter, layout misplacement, crash)
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots / Screen Recordings / Logcat
+      description: Drag and drop screenshots, screen captures, or paste logcat stack traces here.

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 480" width="1240" height="480">
+  <defs>
+    <linearGradient id="privBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060911" />
+      <stop offset="100%" stop-color="#0E1729" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <rect width="1240" height="480" fill="url(#privBg)" rx="24" />
+  <rect x="1" y="1" width="1238" height="478" rx="23" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(620, 52)" text-anchor="middle" class="font-sans">
+    <text y="0" font-size="28" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5px">THE VZON PRIVACY PLEDGE</text>
+    <text y="24" font-size="13" font-weight="500" fill="#94A3B8">Your launcher is your digital front door. It should never spy on what you open.</text>
+  </g>
+
+  <!-- Comparison Columns -->
+  <g transform="translate(70, 110)" class="font-sans">
+    
+    <!-- Standard Launchers (Negative) -->
+    <g>
+      <rect x="0" y="0" width="530" height="320" rx="26" fill="#111622" stroke="rgba(244, 63, 94, 0.25)" stroke-width="1.2" />
+      
+      <g transform="translate(32, 34)">
+        <rect x="0" y="0" width="160" height="24" rx="12" fill="rgba(244, 63, 94, 0.15)" />
+        <text x="80" y="16" fill="#FB7185" font-size="10.5" font-weight="700" text-anchor="middle">TRADITIONAL LAUNCHERS</text>
+
+        <!-- Points -->
+        <g transform="translate(0, 48)">
+          <text x="0" y="0" fill="#F43F5E" font-size="16" font-weight="800">✕</text>
+          <text x="24" y="-2" fill="#E2E8F0" font-size="13" font-weight="700">Embedded Ad &amp; Behavioral SDKs</text>
+          <text x="24" y="16" fill="#64748B" font-size="11">App launch intervals &amp; habits transmitted to cloud trackers.</text>
+        </g>
+
+        <g transform="translate(0, 108)">
+          <text x="0" y="0" fill="#F43F5E" font-size="16" font-weight="800">✕</text>
+          <text x="24" y="-2" fill="#E2E8F0" font-size="13" font-weight="700">Persistent High-Accuracy GPS Polling</text>
+          <text x="24" y="16" fill="#64748B" font-size="11">Drains battery and retains granular movement histories.</text>
+        </g>
+
+        <g transform="translate(0, 168)">
+          <text x="0" y="0" fill="#F43F5E" font-size="16" font-weight="800">✕</text>
+          <text x="24" y="-2" fill="#E2E8F0" font-size="13" font-weight="700">Invasive Notification Text Storage</text>
+          <text x="24" y="16" fill="#64748B" font-size="11">Reads full chat message contents for media &amp; card badges.</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Vzon Launcher (Positive) -->
+    <g transform="translate(570, 0)">
+      <rect x="0" y="0" width="530" height="320" rx="26" fill="#0C1B2A" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5" />
+      
+      <g transform="translate(32, 34)">
+        <rect x="0" y="0" width="160" height="24" rx="12" fill="rgba(16, 185, 129, 0.15)" />
+        <text x="80" y="16" fill="#34D399" font-size="10.5" font-weight="700" text-anchor="middle">VZON ARCHITECTURE</text>
+
+        <!-- Points -->
+        <g transform="translate(0, 48)">
+          <text x="0" y="0" fill="#10B981" font-size="16" font-weight="800">✓</text>
+          <text x="24" y="-2" fill="#FFFFFF" font-size="13" font-weight="700">100% Local &amp; Zero Telemetry</text>
+          <text x="24" y="16" fill="#94A3B8" font-size="11">Zero third-party trackers, zero advertising SDKs, zero cloud telemetry.</text>
+        </g>
+
+        <g transform="translate(0, 108)">
+          <text x="0" y="0" fill="#10B981" font-size="16" font-weight="800">✓</text>
+          <text x="24" y="-2" fill="#FFFFFF" font-size="13" font-weight="700">Coarse-Only WorkManager Weather Caching</text>
+          <text x="24" y="16" fill="#94A3B8" font-size="11">Weather is cached locally via WorkManager. Zero GPS coordinates stored.</text>
+        </g>
+
+        <g transform="translate(0, 168)">
+          <text x="0" y="0" fill="#10B981" font-size="16" font-weight="800">✓</text>
+          <text x="24" y="-2" fill="#FFFFFF" font-size="13" font-weight="700">Zero Notification Content Storage</text>
+          <text x="24" y="16" fill="#94A3B8" font-size="11">Observes active media playback sessions only; chat texts are never read.</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>
